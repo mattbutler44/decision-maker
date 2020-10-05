@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <title>Decision Maker</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h3 style="margin-left:10%; color:indigo; font-weight:bold">Decision Maker</h3>
+        <div id="main" class="card">
+          <div class="card-content">
+            <span class="card-title">What are you choosing from?</span>
+            <div class="row">
+              <form action="" id="option-form">
+                <div class="input-field col s12">
+                  <input type="text" name="option" id="option">
+                  <label for="option">New Option</label>
+                </div>
+                <input type="submit" value="Add Option" class="btn" id="add-option">
+              </form>
+            </div>
+          </div>
+          <div class="card-action">
+            <h5 id="option-title">Options</h5>
+            <div class="input-field col s12">
+              <input type="text" name="options" id="options" disabled>
+              <label for="options">Options</label>
+            </div>
+            <ul class="collection"></ul>
+            <a href="#" class="clear-tasks btn black" id="decide">Decide!</a>
+          </div>
+          <div class="row col s12">
+            <h5 id="output" style="background-color:blue; color:white; width:100%; height:2em; 
+            padding-top:0.5em; padding-left:8px" hidden>You should choose: </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="decider.js"></script>
+</body>
+</html>
